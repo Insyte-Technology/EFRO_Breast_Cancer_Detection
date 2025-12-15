@@ -1,0 +1,1187 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "416ed7e1-78f8-4ac1-ba0a-11b6a5c991c7")
+	(paper "A4")
+	(title_block
+		(date "2021-11-17")
+	)
+	(lib_symbols
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 92.71 91.44)
+		(end 147.32 115.57)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6fb15b7a-0a2c-47bc-a6aa-e846db2e0087)
+	)
+	(rectangle
+		(start 92.71 59.69)
+		(end 147.32 83.82)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 71f81897-dc23-4adb-8258-f9c66486ff67)
+	)
+	(rectangle
+		(start 36.83 27.94)
+		(end 83.82 60.96)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 814c5c10-06ad-4b07-9a36-b12dca5b399d)
+	)
+	(rectangle
+		(start 92.71 120.65)
+		(end 147.32 144.78)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 886cd461-eaf8-4e2b-bfb7-cbee1beb42d1)
+	)
+	(rectangle
+		(start 92.71 27.94)
+		(end 147.32 52.07)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b88de3b3-abd5-43fb-b03a-e06232f6d2d9)
+	)
+	(rectangle
+		(start 36.83 67.31)
+		(end 83.82 97.79)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid da7caea6-e6c2-4b17-be21-865039e9145b)
+	)
+	(text "3V6 to 3V3 for function generator clock and DVDD"
+		(exclude_from_sim no)
+		(at 120.396 26.924 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "2993bd1b-d952-4640-b233-31457b0bda5a")
+	)
+	(text "3V6 to 3V3 for function generator AVDD"
+		(exclude_from_sim no)
+		(at 115.316 58.674 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "406228d6-9569-43f7-b5a5-4a1133fefa9b")
+	)
+	(text "3V6 to 3V3 for STM32"
+		(exclude_from_sim no)
+		(at 106.172 119.126 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "4bcac33f-cef8-4e0f-8619-ac875c8b4bce")
+	)
+	(text "3V6 to 3V3 for function generator Crystal"
+		(exclude_from_sim no)
+		(at 115.316 90.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "adb7ba6c-7b08-44fa-a106-9d4623e117fc")
+	)
+	(text "Power converter for op amps in output stage"
+		(exclude_from_sim no)
+		(at 60.96 65.278 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "cb38f90c-9625-4186-a6f7-ab0a60781d78")
+	)
+	(text "5V to 3V6"
+		(exclude_from_sim no)
+		(at 58.166 27.178 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "eb74edd7-0958-43db-8c91-ffcff2793ef8")
+	)
+	(junction
+		(at 88.9 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2946d1a4-5f25-4046-806f-41288cd87ca4")
+	)
+	(junction
+		(at 88.9 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b1f3346-a3cc-418a-97bf-839d2c12aa9f")
+	)
+	(junction
+		(at 121.92 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e30be260-6c4b-41cc-a5d6-70a8539b3271")
+	)
+	(junction
+		(at 88.9 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fec6b3ea-1801-4ccd-bbad-dce687b6558d")
+	)
+	(wire
+		(pts
+			(xy 88.9 38.1) (xy 88.9 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0315966f-0c9b-4dc8-ad6e-d62558ccedb5")
+	)
+	(wire
+		(pts
+			(xy 121.92 38.1) (xy 132.08 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e3cf530-c627-4732-978d-63a7c5a1abdb")
+	)
+	(wire
+		(pts
+			(xy 118.11 38.1) (xy 121.92 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e497dd2-ca72-4685-93c8-27085ba19187")
+	)
+	(wire
+		(pts
+			(xy 66.04 38.1) (xy 88.9 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "397b5dd7-3771-46eb-b633-8f11d87ac0f9")
+	)
+	(wire
+		(pts
+			(xy 101.6 67.31) (xy 88.9 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e19c81c-e86c-4583-afbc-b0083af7772d")
+	)
+	(wire
+		(pts
+			(xy 101.6 130.81) (xy 88.9 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7108f2b5-2c28-46bd-9c90-b0270e48f331")
+	)
+	(wire
+		(pts
+			(xy 88.9 38.1) (xy 101.6 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "730be749-e2fd-4021-ac4c-12e2ce1027d3")
+	)
+	(wire
+		(pts
+			(xy 137.16 67.31) (xy 118.11 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b54267e-6662-4d35-9bc0-56cbe2ccfd47")
+	)
+	(wire
+		(pts
+			(xy 118.11 130.81) (xy 133.35 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "804df2f1-4573-482c-b9f6-2b76e10e5dc0")
+	)
+	(wire
+		(pts
+			(xy 88.9 101.6) (xy 88.9 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f47dae5-de1e-4ed6-a911-4012c2e1cb0f")
+	)
+	(wire
+		(pts
+			(xy 121.92 48.26) (xy 121.92 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ac602d9-3f13-4d0c-a9c3-ef9a30a81a47")
+	)
+	(wire
+		(pts
+			(xy 137.16 101.6) (xy 118.11 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6847e73-19de-468b-a56a-34e7d5d6dedd")
+	)
+	(wire
+		(pts
+			(xy 34.29 38.1) (xy 48.26 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba4c6e63-7697-4b8b-bc8f-1dfe367295b3")
+	)
+	(wire
+		(pts
+			(xy 34.29 80.01) (xy 48.26 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d24ec961-223b-42ed-a904-00c8f7ec3bda")
+	)
+	(wire
+		(pts
+			(xy 101.6 101.6) (xy 88.9 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d35823ef-8edf-4d94-83de-aa43e744a0df")
+	)
+	(wire
+		(pts
+			(xy 34.29 38.1) (xy 34.29 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc33410e-ffc4-4dfa-8f0f-bb5d85d52ae2")
+	)
+	(wire
+		(pts
+			(xy 132.08 48.26) (xy 121.92 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e464a574-2571-448c-b76b-f083e7294cdb")
+	)
+	(wire
+		(pts
+			(xy 88.9 101.6) (xy 88.9 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eec175d8-d4f3-41b9-b288-9741613f1800")
+	)
+	(hierarchical_label "N5V2"
+		(shape input)
+		(at 66.04 80.01 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b79eb95-500b-4324-a089-61db5e170140")
+	)
+	(hierarchical_label "VDD_STM32"
+		(shape input)
+		(at 133.35 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3cfd6ca2-0675-4117-86a0-3a31139c51ce")
+	)
+	(hierarchical_label "CLKVDD"
+		(shape input)
+		(at 137.16 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "49cc5037-57bd-482b-8750-7f9b061b32d4")
+	)
+	(hierarchical_label "5V"
+		(shape input)
+		(at 34.29 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5d6e6dea-75ef-45b3-aa3e-1ef611eee648")
+	)
+	(hierarchical_label "AVDD"
+		(shape input)
+		(at 137.16 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5fa21461-e91f-43e0-ac55-60e528e9cca9")
+	)
+	(hierarchical_label "P5V2"
+		(shape input)
+		(at 66.04 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d22a1ae6-767a-4c5e-bdff-173cf7e33d41")
+	)
+	(hierarchical_label "DVDD"
+		(shape input)
+		(at 137.16 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e117bbf1-e790-43d9-bd08-e20aff771a64")
+	)
+	(hierarchical_label "CVDDX"
+		(shape input)
+		(at 137.16 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f810f33b-812e-42dc-9865-e4ca9c605348")
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 134.62 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f56859a-e1cb-45f6-8b1e-e39dbf7bec9a")
+		(property "Reference" "FB3"
+			(at 134.5819 31.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.8K OHM AT 100MEGHZ"
+			(at 134.5819 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+			(at 134.62 39.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 134.62 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manf#" "MMZ1608A182BTA00"
+			(at 134.62 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 134.62 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "kicost:pricing" ""
+			(at 134.62 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price 1 Pcs" ""
+			(at 134.62 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38040529-00cb-49fe-bb08-4a6f43b17420")
+		)
+		(pin "2"
+			(uuid "e976f0f0-1164-41bf-96e6-f8569af1f0f7")
+		)
+		(instances
+			(project "Minimal_Prototype_Function_Generator_V0.1"
+				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
+					(reference "FB3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 134.62 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25c700b6-d51a-4057-8766-d318bb2b8834")
+		(property "Reference" "FB4"
+			(at 134.5819 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1.8K OHM AT 100MEGHZ"
+			(at 134.5819 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+			(at 134.62 50.038 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 134.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "manf#" "MMZ1608A182BTA00"
+			(at 134.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 134.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "kicost:pricing" ""
+			(at 134.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price 1 Pcs" ""
+			(at 134.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "92a5f132-639a-4735-91f7-9f3186dbceb9")
+		)
+		(pin "2"
+			(uuid "95afc0f1-85c5-4f7a-9a94-126e8ac18932")
+		)
+		(instances
+			(project "Minimal_Prototype_Function_Generator_V0.1"
+				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
+					(reference "FB4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 64.77)
+		(size 16.51 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2555fde4-3e9a-4e8c-bc63-790e23191d4b")
+		(property "Sheetname" "ADM7160ACPZN3.3_2"
+			(at 101.6 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADM7160ACPZN3.3.kicad_sch"
+			(at 85.598 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "+3V3" input
+			(at 118.11 67.31 0)
+			(uuid "0031286d-7b06-48b4-bf64-a867b36129b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+3V6" input
+			(at 101.6 67.31 180)
+			(uuid "41745dee-8498-42bd-86e5-d588be82ed59")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Minimal_Prototype_Function_Generator_V0.1"
+				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 48.26 35.56)
+		(size 17.78 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "489da256-5233-460d-83c4-79d29c0058c7")
+		(property "Sheetname" "ADP5300ACPZ-1"
+			(at 48.26 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADP5300ACPZ-1.kicad_sch"
+			(at 48.26 43.7646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+3V6" input
+			(at 66.04 38.1 0)
+			(uuid "7de2a3cf-8f4c-4b25-b217-2b524751ccac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+5V" input
+			(at 48.26 38.1 180)
+			(uuid "78584afd-fc40-44b5-b133-476a6bc4442a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Minimal_Prototype_Function_Generator_V0.1"
+				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 35.56)
+		(size 16.51 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5ab5bca2-2a5b-46f6-9fa5-b4bb47a067a0")
+		(property "Sheetname" "ADM7160ACPZN3.3_1"
+			(at 101.6 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADM7160ACPZN3.3.kicad_sch"
+			(at 85.598 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "+3V3" input
+			(at 118.11 38.1 0)
+			(uuid "ee70fdf2-44fd-4291-a85b-2e0aa0a710c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+3V6" input
+			(at 101.6 38.1 180)
+			(uuid "93356c03-ce6b-47d8-8ccc-1db653540699")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Minimal_Prototype_Function_Generator_V0.1"
+				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 48.26 77.47)
+		(size 17.78 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6f8970dc-0f1f-4830-8389-0189bc585685")
+		(property "Sheetname" "LT3472EDD"
+			(at 48.26 76.7584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LT3472EDD.kicad_sch"
+			(at 48.26 86.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "N5V2" input
+			(at 66.04 80.01 0)
+			(uuid "6162c5db-a34b-4fa1-80cc-49318d72f879")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "P5V2" input
+			(at 66.04 82.55 0)
+			(uuid "407b3ce6-7638-4e33-8a0c-128ed1cf5f1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5V" input
+			(at 48.26 80.01 180)
+			(uuid "746bf3cd-5d5f-4a27-b2a1-1362adf60596")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Minimal_Prototype_Function_Generator_V0.1"
+				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 128.27)
+		(size 16.51 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8f2ee683-5e70-42b1-8175-4fb73036cd5f")
+		(property "Sheetname" "ADM7160ACPZN3.3_4"
+			(at 101.6 127.5584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADM7160ACPZN3.3.kicad_sch"
+			(at 85.598 136.906 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "+3V3" input
+			(at 118.11 130.81 0)
+			(uuid "31dfabdd-497c-43bb-be7a-e134cf58429f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+3V6" input
+			(at 101.6 130.81 180)
+			(uuid "67e81828-3ae6-4a45-a1f6-dcda6de8bcb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Minimal_Prototype_Function_Generator_V0.1"
+				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 99.06)
+		(size 16.51 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f9e22310-f16f-4187-b0b7-aa135c7f1a8e")
+		(property "Sheetname" "ADM7160ACPZN3.3_3"
+			(at 101.6 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADM7160ACPZN3.3.kicad_sch"
+			(at 85.598 107.696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "+3V3" input
+			(at 118.11 101.6 0)
+			(uuid "65b7693c-da8d-4e80-a517-a391260758a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "+3V6" input
+			(at 101.6 101.6 180)
+			(uuid "fb4a0d28-8f21-4133-848b-1d8d720fb6d2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Minimal_Prototype_Function_Generator_V0.1"
+				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
+					(page "7")
+				)
+			)
+		)
+	)
+)
