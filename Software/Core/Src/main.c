@@ -24,6 +24,8 @@
 #include "usb_device.h"
 #include "gpio.h"
 #include "usbd_cdc_if.h"
+#include "ad9106.h"
+#include "cli.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -59,39 +61,6 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void AD9106_WriteReg(uint16_t reg, uint16_t data)
-{
-  uint8_t buf[4] = {0};
-  buf[0] = (reg >> 8) & 0x7F; // bit15=0 (write)
-  buf[1] = reg & 0xFF;
-  buf[2] = (data >> 8);
-  buf[3] = (data & 0xFF);
-  HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
-  HAL_SPI_Transmit(&hspi1, buf, 4, HAL_MAX_DELAY);
-  HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
-
-  HAL_Delay(50);
-}
-
-uint16_t AD9106_ReadReg(uint16_t reg)
-{
-  uint8_t tx[4];
-  uint8_t rx[4];
-
-  // bit15 = 1 → read
-  tx[0] = ((reg >> 8) & 0x7F) | 0x80;
-  tx[1] = reg & 0xFF;
-  tx[2] = 0x00; // dummy bytes
-  tx[3] = 0x00;
-
-  HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_RESET);
-  HAL_SPI_TransmitReceive(&hspi1, tx, rx, 4, HAL_MAX_DELAY);
-  HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
-
-  // Combine received data bytes (the last two bytes are the register data)
-  uint16_t data = ((uint16_t)rx[2] << 8) | rx[3];
-  return data;
-}
 
 /* USER CODE END 0 */
 
@@ -130,22 +99,14 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
+  HAL_Delay(200);
+
   HAL_GPIO_WritePin(SPI_CS_GPIO_Port, SPI_CS_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(FUNC_RESET_GPIO_Port, FUNC_RESET_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
 
-  HAL_Delay(500);
-
-  HAL_GPIO_WritePin(FUNC_RESET_GPIO_Port, FUNC_RESET_Pin, GPIO_PIN_RESET);
-
-  HAL_Delay(500);
-
-  HAL_GPIO_WritePin(FUNC_RESET_GPIO_Port, FUNC_RESET_Pin, GPIO_PIN_SET);
-
-  uint8_t data[1] = {1};
-  HAL_SPI_Transmit(&hspi1, data, 1, 100);
-
-  HAL_Delay(100);
+  AD9106_Init();
+  AD9106_Reset();
+  CLI_Init();
 
   // 2. Configure registers
   /*
@@ -182,7 +143,7 @@ int main(void)
     AD9106_WriteReg(0x1D, 0x0001); // RAMUPDATE = 1
     HAL_Delay(10);
 
-    */
+
   uint16_t AD910x_SPI_Register_Addresses[66] = {0x0000, 0x0001, 0x0002, 0x0003, 0x0004, 0x0005, 0x0006, 0x0007, 0x0008, 0x0009, 0x000a, 0x000b, 0x000c, 0x000d, 0x000e, 0x001f, 0x0020, 0x0022, 0x0023, 0x0024, 0x0025, 0x0026, 0x0027, 0x0028, 0x0029, 0x002a, 0x002b, 0x002c, 0x002d, 0x002e, 0x002f, 0x0030, 0x0031, 0x0032, 0x0033, 0x0034, 0x0035, 0x0036, 0x0037, 0x003e, 0x003f, 0x0040, 0x0041, 0x0042, 0x0043, 0x0044, 0x0045, 0x0047, 0x0050, 0x0051, 0x0052, 0x0053, 0x0054, 0x0055, 0x0056, 0x0057, 0x0058, 0x0059, 0x005a, 0x005b, 0x005c, 0x005d, 0x005e, 0x005f, 0x001e, 0x001d};
   uint16_t AD9106_example3_regval[66] = {0x0000, 0x0e00, 0x0000, 0x0000, 0x4000, 0x4000, 0x4000, 0x4000, 0x0000, 0x1f00, 0x1f00, 0x1f00, 0x1f00, 0x0000, 0x0000, 0x0000, 0x000e, 0x0000, 0x0000, 0x0000, 0x0000, 0x3232, 0x3232, 0x0111, 0xffff, 0x0101, 0x0101, 0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x4000, 0x2000, 0x2000, 0x4000, 0x0001, 0x0200, 0x0a3d, 0x7100, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x07d0, 0x0000, 0x0000, 0x0100, 0x03e8, 0x0000, 0x0000, 0x0100, 0x0bb8, 0x0000, 0x0000, 0x0100, 0x0fa0, 0x0000, 0x0000, 0x0100, 0x0001, 0x0001};
   uint16_t AD9106_example4_regval[66] = {0x0000, 0x0e00, 0x0000, 0x0000, 0x4000, 0x4000, 0x4000, 0x4000, 0x0000, 0x1f00, 0x1f00, 0x1f00, 0x1f00, 0x0000, 0x0000, 0x0000, 0x000e, 0x0000, 0x0000, 0x0000, 0x0000, 0x1212, 0x1232, 0x0121, 0xffff, 0x0101, 0x0101, 0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x4000, 0x4000, 0x4000, 0x4000, 0x1011, 0x0600, 0x1999, 0x9a00, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x07d0, 0x0000, 0x0000, 0x0001, 0x03e8, 0x0000, 0x0000, 0x0001, 0x03e8, 0x0000, 0x0000, 0x0001, 0x0fa0, 0x0000, 0x0000, 0x16ff, 0x0001, 0x0001};
@@ -196,17 +157,17 @@ int main(void)
     HAL_Delay(10);
   }
 
+   */
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
-  uint8_t Buf[20] = {"Hello World"};
   while (1)
   {
 
-    CDC_Transmit_FS(Buf, 20);
-    HAL_Delay(100);
+    CLI_Process();
+    HAL_Delay(1);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
