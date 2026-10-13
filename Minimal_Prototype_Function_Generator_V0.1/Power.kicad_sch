@@ -1,14 +1,14 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "416ed7e1-78f8-4ac1-ba0a-11b6a5c991c7")
 	(paper "A4")
 	(title_block
 		(date "2021-11-17")
 	)
 	(lib_symbols
-		(symbol "Device:FerriteBead_Small"
+		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -18,100 +18,89 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "FB"
-				(at 1.905 1.27 0)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "FerriteBead_Small"
-				(at 1.905 -1.27 0)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
 				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Description" "Ferrite bead, small symbol"
+			(property "Description" "Resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "ki_keywords" "L ferrite bead inductor filter"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(symbol "FerriteBead_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
-					)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.889) (xy 0 1.2954)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -0.7874)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -119,11 +108,11 @@
 					)
 				)
 			)
-			(symbol "FerriteBead_Small_1_1"
+			(symbol "R_1_1"
 				(pin passive line
-					(at 0 2.54 270)
+					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -139,9 +128,9 @@
 					)
 				)
 				(pin passive line
-					(at 0 -2.54 90)
+					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -170,7 +159,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 6fb15b7a-0a2c-47bc-a6aa-e846db2e0087)
+		(uuid "6fb15b7a-0a2c-47bc-a6aa-e846db2e0087")
 	)
 	(rectangle
 		(start 92.71 59.69)
@@ -182,7 +171,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 71f81897-dc23-4adb-8258-f9c66486ff67)
+		(uuid "71f81897-dc23-4adb-8258-f9c66486ff67")
 	)
 	(rectangle
 		(start 36.83 27.94)
@@ -194,7 +183,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 814c5c10-06ad-4b07-9a36-b12dca5b399d)
+		(uuid "814c5c10-06ad-4b07-9a36-b12dca5b399d")
 	)
 	(rectangle
 		(start 92.71 120.65)
@@ -206,7 +195,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 886cd461-eaf8-4e2b-bfb7-cbee1beb42d1)
+		(uuid "886cd461-eaf8-4e2b-bfb7-cbee1beb42d1")
 	)
 	(rectangle
 		(start 92.71 27.94)
@@ -218,7 +207,7 @@
 		(fill
 			(type none)
 		)
-		(uuid b88de3b3-abd5-43fb-b03a-e06232f6d2d9)
+		(uuid "b88de3b3-abd5-43fb-b03a-e06232f6d2d9")
 	)
 	(rectangle
 		(start 36.83 67.31)
@@ -230,7 +219,7 @@
 		(fill
 			(type none)
 		)
-		(uuid da7caea6-e6c2-4b17-be21-865039e9145b)
+		(uuid "da7caea6-e6c2-4b17-be21-865039e9145b")
 	)
 	(text "3V6 to 3V3 for function generator clock and DVDD"
 		(exclude_from_sim no)
@@ -320,7 +309,7 @@
 		(at 121.92 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e30be260-6c4b-41cc-a5d6-70a8539b3271")
+		(uuid "e5d607d8-16cf-4cba-9c99-065e072ac658")
 	)
 	(junction
 		(at 88.9 67.31)
@@ -340,7 +329,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 38.1) (xy 132.08 38.1)
+			(xy 121.92 38.1) (xy 125.73 38.1)
 		)
 		(stroke
 			(width 0)
@@ -490,7 +479,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 48.26) (xy 121.92 48.26)
+			(xy 125.73 48.26) (xy 121.92 48.26)
 		)
 		(stroke
 			(width 0)
@@ -532,7 +521,7 @@
 	)
 	(hierarchical_label "CLKVDD"
 		(shape input)
-		(at 137.16 48.26 0)
+		(at 133.35 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -576,7 +565,7 @@
 	)
 	(hierarchical_label "DVDD"
 		(shape input)
-		(at 137.16 38.1 0)
+		(at 133.35 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -597,87 +586,107 @@
 		(uuid "f810f33b-812e-42dc-9865-e4ca9c605348")
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 134.62 38.1 90)
+		(lib_id "Device:R")
+		(at 129.54 48.26 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1f56859a-e1cb-45f6-8b1e-e39dbf7bec9a")
-		(property "Reference" "FB3"
-			(at 134.5819 31.75 90)
+		(uuid "7098570f-c77c-4d30-9b24-4d23a3cd9a43")
+		(property "Reference" "R57"
+			(at 129.54 41.91 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1.8K OHM AT 100MEGHZ"
-			(at 134.5819 34.29 90)
+		(property "Value" "0R"
+			(at 129.54 44.45 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 134.62 39.878 90)
+		(property "Footprint" "Insyte_Footprints:R_0603"
+			(at 129.54 50.038 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 134.62 38.1 0)
+		(property "Datasheet" ""
+			(at 129.54 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Ferrite bead, small symbol"
-			(at 134.62 38.1 0)
+		(property "Description" "Resistor"
+			(at 129.54 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "manf#" "MMZ1608A182BTA00"
-			(at 134.62 38.1 0)
+		(property "manf#" ""
+			(at 129.54 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
-			(at 134.62 38.1 0)
+			(at 129.54 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "kicost:pricing" ""
-			(at 134.62 38.1 0)
+			(at 129.54 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Price 1 Pcs" ""
-			(at 134.62 38.1 0)
+			(at 129.54 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -685,102 +694,122 @@
 			)
 		)
 		(pin "1"
-			(uuid "38040529-00cb-49fe-bb08-4a6f43b17420")
+			(uuid "b8743a54-15d5-4031-b124-73b149bbb3e0")
 		)
 		(pin "2"
-			(uuid "e976f0f0-1164-41bf-96e6-f8569af1f0f7")
+			(uuid "d18f5b1f-546d-4546-b737-f0a8f3be761a")
 		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"
 				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
-					(reference "FB3")
+					(reference "R57")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 134.62 48.26 90)
+		(lib_id "Device:R")
+		(at 129.54 38.1 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "25c700b6-d51a-4057-8766-d318bb2b8834")
-		(property "Reference" "FB4"
-			(at 134.5819 41.91 90)
+		(uuid "88b4b6b7-7cc6-42a4-8fd9-e7442d0dcc4e")
+		(property "Reference" "R56"
+			(at 129.54 31.75 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1.8K OHM AT 100MEGHZ"
-			(at 134.5819 44.45 90)
+		(property "Value" "0R"
+			(at 129.54 34.29 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 134.62 50.038 90)
+		(property "Footprint" "Insyte_Footprints:R_0603"
+			(at 129.54 39.878 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 134.62 48.26 0)
+		(property "Datasheet" ""
+			(at 129.54 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Ferrite bead, small symbol"
-			(at 134.62 48.26 0)
+		(property "Description" "Resistor"
+			(at 129.54 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "manf#" "MMZ1608A182BTA00"
-			(at 134.62 48.26 0)
+		(property "manf#" ""
+			(at 129.54 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
-			(at 134.62 48.26 0)
+			(at 129.54 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "kicost:pricing" ""
-			(at 134.62 48.26 0)
+			(at 129.54 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Price 1 Pcs" ""
-			(at 134.62 48.26 0)
+			(at 129.54 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -788,15 +817,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "92a5f132-639a-4735-91f7-9f3186dbceb9")
+			(uuid "0a864f80-d863-42a3-921d-8d057604a4e0")
 		)
 		(pin "2"
-			(uuid "95afc0f1-85c5-4f7a-9a94-126e8ac18932")
+			(uuid "580980d9-4b2d-4e95-878c-0e5cb45543ee")
 		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"
 				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/d2d23d07-87a2-43ca-8151-cee5fbd7acab"
-					(reference "FB4")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -814,11 +843,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "2555fde4-3e9a-4e8c-bc63-790e23191d4b")
 		(property "Sheetname" "ADM7160ACPZN3.3_2"
 			(at 101.6 64.0584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -828,12 +859,14 @@
 		)
 		(property "Sheetfile" "ADM7160ACPZN3.3.kicad_sch"
 			(at 85.598 73.406 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "+3V3" input
@@ -877,11 +910,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "489da256-5233-460d-83c4-79d29c0058c7")
 		(property "Sheetname" "ADP5300ACPZ-1"
 			(at 48.26 34.8484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -891,6 +926,8 @@
 		)
 		(property "Sheetfile" "ADP5300ACPZ-1.kicad_sch"
 			(at 48.26 43.7646 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -938,11 +975,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "5ab5bca2-2a5b-46f6-9fa5-b4bb47a067a0")
 		(property "Sheetname" "ADM7160ACPZN3.3_1"
 			(at 101.6 34.8484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -952,12 +991,14 @@
 		)
 		(property "Sheetfile" "ADM7160ACPZN3.3.kicad_sch"
 			(at 85.598 44.196 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "+3V3" input
@@ -1001,11 +1042,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "6f8970dc-0f1f-4830-8389-0189bc585685")
 		(property "Sheetname" "LT3472EDD"
 			(at 48.26 76.7584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1015,6 +1058,8 @@
 		)
 		(property "Sheetfile" "LT3472EDD.kicad_sch"
 			(at 48.26 86.9446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1072,11 +1117,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "8f2ee683-5e70-42b1-8175-4fb73036cd5f")
 		(property "Sheetname" "ADM7160ACPZN3.3_4"
 			(at 101.6 127.5584 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1086,12 +1133,14 @@
 		)
 		(property "Sheetfile" "ADM7160ACPZN3.3.kicad_sch"
 			(at 85.598 136.906 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "+3V3" input
@@ -1134,11 +1183,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "f9e22310-f16f-4187-b0b7-aa135c7f1a8e")
 		(property "Sheetname" "ADM7160ACPZN3.3_3"
 			(at 101.6 98.3484 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1148,12 +1199,14 @@
 		)
 		(property "Sheetfile" "ADM7160ACPZN3.3.kicad_sch"
 			(at 85.598 107.696 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "+3V3" input

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "4f62c91b-90a7-42e6-9468-9a44c0d5e9c2")
 	(paper "A3")
 	(title_block
@@ -9,12 +9,16 @@
 		(company "Insyte")
 	)
 	(lib_symbols
-		(symbol "142-0701-201:142-0701-201"
+		(symbol "142-0701-801:142-0701-801"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at -0.508 6.096 0)
+				(at 16.51 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -22,8 +26,10 @@
 					(justify left top)
 				)
 			)
-			(property "Value" "142-0701-201"
-				(at -7.366 3.81 0)
+			(property "Value" "142-0701-801"
+				(at 16.51 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -31,86 +37,102 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "1420701201"
+			(property "Footprint" "Insyte_Footprints:142-0701-851"
 				(at 16.51 -94.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/f0edfbb4fd3b9d8af3607c026aa358ce.pdf"
+			(property "Datasheet" ""
 				(at 16.51 -194.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
-			(property "Description" "JOHNSON - CINCH CONNECTIVITY - 142-0701-201 - RF COAXIAL, SMA, STRAIGHT JACK, 50OHM"
+			(property "Description" "JOHNSON - 142-0701-801 - \\u5C04\\u9891/\\u540C\\u8F74\\u63D2\\u5B54, SMA, PCB\\u5B89\\u88C5"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Height" "9.52"
+			(property "Height" ""
 				(at 16.51 -394.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "530-142-0701-201"
+			(property "Mouser Part Number" "530-142-0701-801"
 				(at 16.51 -494.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Johnson-Cinch-Connectivity-Solutions/142-0701-201?qs=sh18mOF39qY1deZe7h2WsQ%3D%3D"
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Johnson-Cinch-Connectivity-Solutions/142-0701-801?qs=PcPxjN2Z58KbDaDuDxyLHA%3D%3D"
 				(at 16.51 -594.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
 			(property "Manufacturer_Name" "Cinch Connectivity Solutions"
 				(at 16.51 -694.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
-			(property "Manufacturer_Part_Number" "142-0701-201"
+			(property "Manufacturer_Part_Number" "142-0701-801"
 				(at 16.51 -794.92 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left top)
-					(hide yes)
 				)
 			)
-			(symbol "142-0701-201_0_1"
+			(symbol "142-0701-801_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy -0.508 0)
@@ -171,11 +193,11 @@
 					)
 				)
 			)
-			(symbol "142-0701-201_1_1"
+			(symbol "142-0701-801_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
-					(name "In"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -193,7 +215,7 @@
 				(pin passive line
 					(at 0 -5.08 90)
 					(length 2.54)
-					(name "Ext"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -278,8 +300,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -288,6 +314,8 @@
 			)
 			(property "Value" "R"
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -296,47 +324,57 @@
 			)
 			(property "Footprint" ""
 				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_0_1"
@@ -356,7 +394,7 @@
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -374,7 +412,7 @@
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 1.27)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -393,7 +431,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -404,17 +442,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -423,38 +467,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -475,7 +527,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -504,7 +556,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 0857f0a0-7903-415a-8af9-33dfb91b1433)
+		(uuid "0857f0a0-7903-415a-8af9-33dfb91b1433")
 	)
 	(rectangle
 		(start 438.404 83.7457)
@@ -516,7 +568,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 0f486a9b-03c7-40ef-884d-1421d3c9e47c)
+		(uuid "0f486a9b-03c7-40ef-884d-1421d3c9e47c")
 	)
 	(rectangle
 		(start 438.277 12.4987)
@@ -528,7 +580,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 159299c0-4b51-49fe-a5ef-c24962690d10)
+		(uuid "159299c0-4b51-49fe-a5ef-c24962690d10")
 	)
 	(rectangle
 		(start 468.122 4.8787)
@@ -540,7 +592,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 34191cb9-1923-491d-9d03-c99886167f73)
+		(uuid "34191cb9-1923-491d-9d03-c99886167f73")
 	)
 	(rectangle
 		(start 438.277 4.8787)
@@ -552,7 +604,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 587b8585-07b7-469c-8c48-447f288361aa)
+		(uuid "587b8585-07b7-469c-8c48-447f288361aa")
 	)
 	(rectangle
 		(start 438.277 4.8787)
@@ -564,7 +616,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 77dce640-e9b6-40ff-8762-df2006d1805a)
+		(uuid "77dce640-e9b6-40ff-8762-df2006d1805a")
 	)
 	(rectangle
 		(start 438.277 30.2787)
@@ -576,7 +628,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 84c96947-f990-4d71-99e1-075dbf7b8b9d)
+		(uuid "84c96947-f990-4d71-99e1-075dbf7b8b9d")
 	)
 	(rectangle
 		(start 438.277 48.0587)
@@ -588,7 +640,7 @@
 		(fill
 			(type none)
 		)
-		(uuid 854b87da-ff08-4420-b48b-9eafefb86128)
+		(uuid "854b87da-ff08-4420-b48b-9eafefb86128")
 	)
 	(rectangle
 		(start 438.15 138.1017)
@@ -600,7 +652,7 @@
 		(fill
 			(type none)
 		)
-		(uuid ae10c75a-7b39-4f46-8902-28cf5dd6b521)
+		(uuid "ae10c75a-7b39-4f46-8902-28cf5dd6b521")
 	)
 	(rectangle
 		(start 682.371 4.8787)
@@ -612,7 +664,7 @@
 		(fill
 			(type none)
 		)
-		(uuid c186db2a-4f1f-43f8-ae6b-87849df985c4)
+		(uuid "c186db2a-4f1f-43f8-ae6b-87849df985c4")
 	)
 	(rectangle
 		(start 438.2147 65.9948)
@@ -624,7 +676,7 @@
 		(fill
 			(type none)
 		)
-		(uuid c5d50f48-5951-4756-a5df-5a8753f959f1)
+		(uuid "c5d50f48-5951-4756-a5df-5a8753f959f1")
 	)
 	(rectangle
 		(start 822.452 4.6247)
@@ -636,7 +688,7 @@
 		(fill
 			(type none)
 		)
-		(uuid c6501b88-7a17-4ef7-9c32-044eca015887)
+		(uuid "c6501b88-7a17-4ef7-9c32-044eca015887")
 	)
 	(rectangle
 		(start 438.277 4.8787)
@@ -648,7 +700,7 @@
 		(fill
 			(type none)
 		)
-		(uuid df24425c-2a6d-4605-a1ec-b0ed094b1d2c)
+		(uuid "df24425c-2a6d-4605-a1ec-b0ed094b1d2c")
 	)
 	(rectangle
 		(start 438.15 119.38)
@@ -660,7 +712,7 @@
 		(fill
 			(type none)
 		)
-		(uuid e84afc92-9854-4c04-8d17-2b73cd641537)
+		(uuid "e84afc92-9854-4c04-8d17-2b73cd641537")
 	)
 	(rectangle
 		(start 497.967 4.8787)
@@ -672,7 +724,7 @@
 		(fill
 			(type none)
 		)
-		(uuid f5e64431-d57d-44d3-a3fc-a548ba889cda)
+		(uuid "f5e64431-d57d-44d3-a3fc-a548ba889cda")
 	)
 	(text "Ignatijs"
 		(exclude_from_sim no)
@@ -807,6 +859,17 @@
 			(justify left)
 		)
 		(uuid "3e4b60ed-6640-4c0d-930c-1fd9b5d9ae41")
+	)
+	(text "- FB1 & FB2 replaced with 0R resistors\n- Connect pin 2 of L4 to N5V2_VN instead of P5V2_VP\n- Removed unneeded TVS diode on CC1 and CC2 lines."
+		(exclude_from_sim no)
+		(at 535.686 91.186 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left)
+		)
+		(uuid "4d47ea6d-b1b9-4b6d-8dac-49d67a00b5dc")
 	)
 	(text "Ordering specifications"
 		(exclude_from_sim no)
@@ -1174,6 +1237,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 173.99) (xy 236.22 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a21738d-c352-4c30-9e05-72ba1ae96e46")
+	)
+	(wire
+		(pts
 			(xy 194.31 158.75) (xy 236.22 158.75)
 		)
 		(stroke
@@ -1201,6 +1274,16 @@
 			(type default)
 		)
 		(uuid "a1082caf-6ca8-42f2-bbe4-fe02bd4338ef")
+	)
+	(wire
+		(pts
+			(xy 194.31 176.53) (xy 236.22 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a18733f6-efcf-4965-ad74-c7e20c8b1bd1")
 	)
 	(wire
 		(pts
@@ -2539,14 +2622,18 @@
 		(lib_id "Device:R")
 		(at 179.07 127 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79164f5e-64e2-4e4e-bb17-66084f964959")
 		(property "Reference" "R10"
 			(at 176.53 128.2701 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2556,6 +2643,8 @@
 		)
 		(property "Value" "9.1K"
 			(at 176.53 125.7301 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2563,62 +2652,76 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Insyte_Footprints:R_0603"
 			(at 180.848 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 179.07 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 179.07 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "manf#" ""
 			(at 179.07 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 179.07 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "kicost:pricing" ""
 			(at 179.07 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Price 1 Pcs" ""
 			(at 179.07 127 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2644,23 +2747,29 @@
 		(lib_id "power:GND")
 		(at 179.07 130.81 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "926e1f49-f074-4730-8030-39053e8c3aa0")
 		(property "Reference" "#PWR061"
 			(at 179.07 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 179.07 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2669,36 +2778,42 @@
 		)
 		(property "Footprint" ""
 			(at 179.07 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 179.07 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 179.07 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
 			(uuid "adcfbaeb-0d72-4d56-812d-2b2b50969782")
 		)
 		(instances
-			(project ""
+			(project "Minimal_Prototype_Function_Generator_V0.1"
 				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2"
 					(reference "#PWR061")
 					(unit 1)
@@ -2710,14 +2825,18 @@
 		(lib_id "Device:R")
 		(at 179.07 118.11 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b92699a-9c6a-4a42-b1cf-d0f524212397")
 		(property "Reference" "R45"
 			(at 176.53 119.3801 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2727,6 +2846,8 @@
 		)
 		(property "Value" "4.7K"
 			(at 176.53 116.8401 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2734,62 +2855,76 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Insyte_Footprints:R_0603"
 			(at 180.848 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 179.07 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Resistor"
 			(at 179.07 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "manf#" ""
 			(at 179.07 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 179.07 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "kicost:pricing" ""
 			(at 179.07 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Price 1 Pcs" ""
 			(at 179.07 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,165 +2947,186 @@
 		)
 	)
 	(symbol
-		(lib_id "142-0701-201:142-0701-201")
+		(lib_id "142-0701-801:142-0701-801")
 		(at 162.56 114.3 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(uuid "b7dec3f9-b051-486a-b169-35668b90372b")
-		(property "Reference" "J6"
-			(at 165.1 116.332 0)
+		(uuid "a8eb5b96-a972-466c-8a3d-2669f4fa15ae")
+		(property "Reference" "J13"
+			(at 168.148 108.458 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "142-0701-201"
-			(at 162.56 110.744 0)
+		(property "Value" "142-0701-801"
+			(at 168.148 110.998 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Insyte_Footprints:1420701201"
+		(property "Footprint" "Insyte_Footprints:142-0701-851"
 			(at 146.05 209.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets_SAMA/f0edfbb4fd3b9d8af3607c026aa358ce.pdf"
+		(property "Datasheet" ""
 			(at 146.05 309.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
-		(property "Description" "JOHNSON - CINCH CONNECTIVITY - 142-0701-201 - RF COAXIAL, SMA, STRAIGHT JACK, 50OHM"
+		(property "Description" "JOHNSON - 142-0701-801 - \\u5C04\\u9891/\\u540C\\u8F74\\u63D2\\u5B54, SMA, PCB\\u5B89\\u88C5"
 			(at 162.56 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Height" "9.52"
+		(property "Height" ""
 			(at 146.05 509.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "530-142-0701-201"
+		(property "Mouser Part Number" "530-142-0701-801"
 			(at 146.05 609.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Johnson-Cinch-Connectivity-Solutions/142-0701-201?qs=sh18mOF39qY1deZe7h2WsQ%3D%3D"
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Johnson-Cinch-Connectivity-Solutions/142-0701-801?qs=PcPxjN2Z58KbDaDuDxyLHA%3D%3D"
 			(at 146.05 709.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Manufacturer_Name" "Cinch Connectivity Solutions"
 			(at 146.05 809.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "142-0701-201"
+		(property "Manufacturer_Part_Number" "142-0701-801"
 			(at 146.05 909.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "manf#" ""
 			(at 162.56 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" ""
 			(at 162.56 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "kicost:pricing" ""
 			(at 162.56 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price 1 Pcs" ""
-			(at 162.56 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "bff34d9c-f2af-4fe1-9f4a-c4c2458e60ec")
-		)
-		(pin "4"
-			(uuid "72b6ef5a-9638-4034-873e-31efdcd93635")
 		)
 		(pin "1"
-			(uuid "85e7c915-b37b-418a-b26a-823b6f305009")
+			(uuid "18204cb5-cb2f-4ae8-8094-99bc0a7995e8")
 		)
-		(pin "5"
-			(uuid "350064da-8935-49f4-a819-d3d264c6c595")
+		(pin "2"
+			(uuid "df006593-a098-4de8-8409-4e5b2e19fe27")
 		)
 		(pin "3"
-			(uuid "be848ab6-8254-467f-9794-99374254c896")
+			(uuid "e9f7e503-ee20-428f-90da-d9c0196c6b02")
+		)
+		(pin "5"
+			(uuid "02b7544b-ec66-4093-98a6-c2045846dc17")
+		)
+		(pin "4"
+			(uuid "2f8414d5-0f3b-4b7a-ac09-cdb0d5c47f21")
 		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"
 				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2"
-					(reference "J6")
+					(reference "J13")
 					(unit 1)
 				)
 			)
@@ -2989,11 +3145,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "253c27fa-7392-4145-a39c-ea1ae9914035")
 		(property "Sheetname" "Output_Stage"
 			(at 321.31 66.5984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3003,6 +3161,8 @@
 		)
 		(property "Sheetfile" "Output_Stage.kicad_sch"
 			(at 321.31 108.5346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3131,11 +3291,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "41d5001e-a8ed-4e44-9ec1-df5bd6f03dd6")
 		(property "Sheetname" "STM32"
 			(at 144.78 141.5284 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3145,6 +3307,8 @@
 		)
 		(property "Sheetfile" "STM32.kicad_sch"
 			(at 144.78 179.6546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3252,6 +3416,26 @@
 				(justify right)
 			)
 		)
+		(pin "CLOCK_EN" input
+			(at 194.31 173.99 0)
+			(uuid "d87649be-8d3c-4a80-9d48-bdc3300e3c16")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "CLOCK_SEL" input
+			(at 194.31 176.53 0)
+			(uuid "313a6763-049c-42a3-bfed-aea6ec2f2da6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"
 				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2"
@@ -3273,11 +3457,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "b847d088-c8c5-414e-b015-30dc1f0669ef")
 		(property "Sheetname" "Function Generator"
 			(at 236.22 66.5984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3287,6 +3473,8 @@
 		)
 		(property "Sheetfile" "AD9106.kicad_sch"
 			(at 236.22 184.7346 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3474,6 +3662,26 @@
 				(justify left)
 			)
 		)
+		(pin "CLOCK_EN" input
+			(at 236.22 173.99 180)
+			(uuid "afd098ff-3fab-4271-a86e-3ef4a94f378b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CLOCK_SEL" input
+			(at 236.22 176.53 180)
+			(uuid "4e74db99-d60a-4c4e-9189-debe914d94fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"
 				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2"
@@ -3495,11 +3703,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "d2d23d07-87a2-43ca-8151-cee5fbd7acab")
 		(property "Sheetname" "Power"
 			(at 144.78 66.5984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3509,6 +3719,8 @@
 		)
 		(property "Sheetfile" "Power.kicad_sch"
 			(at 144.78 103.4546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3617,11 +3829,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "e4b7b113-99c6-49cb-9e75-52d9bffda03e")
 		(property "Sheetname" "USB_C"
 			(at 91.44 66.5984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3631,6 +3845,8 @@
 		)
 		(property "Sheetfile" "USB_C.kicad_sch"
 			(at 91.44 103.4546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
