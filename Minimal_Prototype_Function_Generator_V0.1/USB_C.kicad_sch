@@ -1487,7 +1487,7 @@
 	)
 	(text "ESD"
 		(exclude_from_sim no)
-		(at 109.982 16.764 0)
+		(at 106.934 17.272 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3139,7 +3139,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "325R"
+		(property "Value" "500R"
 			(at 207.01 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3218,6 +3218,39 @@
 		)
 		(property "Price 1 Pcs" ""
 			(at 204.47 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "manf#" ""
+			(at 204.47 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 204.47 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "kicost:pricing" ""
+			(at 204.47 30.48 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

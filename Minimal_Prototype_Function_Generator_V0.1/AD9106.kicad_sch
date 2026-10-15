@@ -248,44 +248,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "Ext"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "Ext"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 			(embedded_fonts no)
 		)
@@ -5047,7 +5009,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "142-0701-801"
+		(property "Value" "SMA-J-P-H-ST-EM1"
 			(at 29.718 83.058 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5194,12 +5156,6 @@
 		)
 		(pin "3"
 			(uuid "ef32f803-9f6c-4d9c-a6bc-d4e265257d88")
-		)
-		(pin "5"
-			(uuid "790e6b27-a7ad-4a00-bc59-3473dc76b281")
-		)
-		(pin "4"
-			(uuid "5c1f2e27-cbe6-4ee4-a7f3-29faf1307c2b")
 		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"

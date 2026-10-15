@@ -248,44 +248,6 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "Ext"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(hide yes)
-					(name "Ext"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
 			(embedded_fonts no)
 		)
@@ -671,7 +633,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "142-0701-801"
+		(property "Value" "SMA-J-P-H-ST-EM1"
 			(at 108.712 65.278 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -819,12 +781,6 @@
 		(pin "3"
 			(uuid "d268a01f-16e2-425d-a3ba-7dc96fe2228b")
 		)
-		(pin "4"
-			(uuid "1c5f7689-d96b-4da7-9d4c-7e3a675205ce")
-		)
-		(pin "5"
-			(uuid "a4284451-d8fc-43bd-a3ae-ea160c4b9be1")
-		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"
 				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/253c27fa-7392-4145-a39c-ea1ae9914035"
@@ -856,7 +812,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "142-0701-801"
+		(property "Value" "SMA-J-P-H-ST-EM1"
 			(at 115.062 28.448 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1004,12 +960,6 @@
 		(pin "3"
 			(uuid "b885ee40-c9d8-432f-ae69-72c03b1aa373")
 		)
-		(pin "4"
-			(uuid "20851857-ddd2-48ea-8328-3bab639ff344")
-		)
-		(pin "5"
-			(uuid "29a8d4e2-9ce0-45ab-805b-03bb65c90e95")
-		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"
 				(path "/4f62c91b-90a7-42e6-9468-9a44c0d5e9c2/253c27fa-7392-4145-a39c-ea1ae9914035"
@@ -1041,7 +991,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "142-0701-801"
+		(property "Value" "SMA-J-P-H-ST-EM1"
 			(at 115.062 62.738 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1188,12 +1138,6 @@
 		)
 		(pin "3"
 			(uuid "2a49d390-cfb9-4025-9380-21fd273a49e2")
-		)
-		(pin "5"
-			(uuid "7824f918-60e9-4c3e-a2b1-36bb1d592edf")
-		)
-		(pin "4"
-			(uuid "beb7e0df-bccb-4bd1-9a40-c81ef520e5a1")
 		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"
@@ -1382,7 +1326,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "142-0701-801"
+		(property "Value" "SMA-J-P-H-ST-EM1"
 			(at 108.712 30.988 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1529,12 +1473,6 @@
 		)
 		(pin "3"
 			(uuid "4f5070a4-f875-4f3e-9f20-231753127966")
-		)
-		(pin "4"
-			(uuid "4fbf96e7-22a6-4ee4-8de2-764d6ecfd550")
-		)
-		(pin "5"
-			(uuid "ff28ac64-946d-49d0-869a-cfa589175a06")
 		)
 		(instances
 			(project "Minimal_Prototype_Function_Generator_V0.1"

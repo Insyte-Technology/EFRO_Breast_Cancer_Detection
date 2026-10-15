@@ -891,7 +891,7 @@
           "show": false
         }
       ],
-      "filter_string": "t",
+      "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": false,
       "name": "",
@@ -964,7 +964,7 @@
         "uuid": "4f62c91b-90a7-42e6-9468-9a44c0d5e9c2"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R70-73,C69,C72-74,#PWR69,#PWR95-97",
     "variants": []
   },
   "sheets": [
